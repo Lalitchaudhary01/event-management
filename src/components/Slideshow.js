@@ -1,3 +1,4 @@
+// Slideshow.js
 import React, { useState, useEffect } from "react";
 
 const Slideshow = ({ images }) => {
@@ -26,23 +27,23 @@ const Slideshow = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden">
       <img
-        src={images[currentImageIndex]}
+        src={process.env.PUBLIC_URL + images[currentImageIndex]}
         alt={`Slide ${currentImageIndex + 1}`}
-        className="w-full h-auto"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       <div className="absolute inset-0 flex justify-between items-center">
         <button
           onClick={prevImage}
-          className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-lg"
+          className="bg-black bg-opacity-50 text-white px-4 py-2 mx-8  rounded-l-lg focus:outline-none"
         >
           &lt;
         </button>
         <button
           onClick={nextImage}
-          className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-lg"
+          className="bg-black bg-opacity-50 text-white px-4 py-2 mx-8 rounded-r-lg focus:outline-none"
         >
           &gt;
         </button>

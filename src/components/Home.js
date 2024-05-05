@@ -1,19 +1,30 @@
+// Home.js
 import React from "react";
 import Slideshow from "./Slideshow";
+import ServicePage from "./ServicePage";
+import AboutUsPage from "./About";
+import Footer from "./Footer";
+import Concert from "../images/concert.jpg";
+import CreateMemories from "../images/create-memoreis.jpg";
+import VenueSelection from "../images/venue-slection.jpg";
+import WeddingDesign from "../images/wedding-design.jpg";
+import WeddingPlanning from "../images/wedding-Planning.jpg";
 
 const images = [
-  "/images/concert.jpg",
-  "/images/create-memories.jpg",
-  "/images/venue-selection.jpg",
-  "/images/wedding-design.jpg",
-  "/images/wedding-planning.jpg",
+  Concert,
+  CreateMemories,
+  VenueSelection,
+  WeddingDesign,
+  WeddingPlanning,
 ];
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>Welcome to the Event Management Website</h1>
+    <div className="container">
       <Slideshow images={images} />
+      <ServicePage />
+      <AboutUsPage />
+      <Footer />
     </div>
   );
 };
