@@ -2,7 +2,7 @@ import React from "react";
 
 const Service = () => {
   return (
-    <section className="text-gray-700 body-font mt-10 relative w-screen h-screen overflow-hidden">
+    <section className="text-gray-700 body-font mt-10  relative w-screen overflow-hidden">
       <div className="flex justify-center text-3xl font-bold text-gray-800 text-center">
         Why Us?
       </div>

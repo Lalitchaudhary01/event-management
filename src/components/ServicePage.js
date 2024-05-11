@@ -72,13 +72,13 @@ const ServicePage = () => {
     <>
       <div className="text-center relative w-screen overflow-hidden ">
         <div className="mt-5">
-          <span className="rounded-full bg-gray-300 text-3xl px-3 py-1 text-red-800">
+          <span className="rounded-full bg-gray-300 text-3xl px-3 py-1 text-indigo-700">
             SERVICES
           </span>
         </div>
         <p className="mt-4 my-4">
           <span className="text-gray-800 text-4xl font-bold">Check our</span>{" "}
-          <span className="text-red-800 text-4xl font-bold">Services</span>
+          <span className="text-indigo-700 text-4xl font-bold">Services</span>
         </p>
         <p className="text-gray-700 text-center mx-10 my-4">
           Creating unforgettable moments and turning dreams into reality,

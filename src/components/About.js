@@ -3,14 +3,14 @@ import React from "react";
 const AboutUsPage = () => {
   return (
     <div className="text-left bg-gray-200 p-6 pr-12 text-center relative w-screen h-screen overflow-hidden">
-      <span className="rounded-full w-20 bg-gray-300 width-20 text-3xl my-3 px-3 py-1 text-center text-red-800">
-        ABOUT
+      <span className="rounded-full w-20 bg-gray-300 width-20 text-4xl my-3 px-3 py-1 text-center text-indigo-700">
+        About Us
       </span>
       <div className="mt-4">
         <h3 className="text-3xl font-bold text-gray-800">
-          Find Out More About Us
+          Find Out More <span className="text-indigo-700"> About Us</span>
         </h3>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 mx-5">
           Welcome to Devshree - Your Ultimate Event and Holiday Planning
           Partner! At Devshree, we specialize in creating unforgettable moments
           for life's most special occasions. Since our inception in 2009, we've
@@ -22,14 +22,14 @@ const AboutUsPage = () => {
           synonymous with excellence and innovation in the event and holiday
           planning industry.
         </p>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 mx-5">
           We take pride in our expertise across a range of services, including
           wedding planning, venue selection, artist management, and holiday
           planning. Our team of dedicated professionals understands the
           significance of your events and works tirelessly to ensure that every
           detail is perfect, exceeding your expectations every time.
         </p>
-        <p className="text-gray-600 mt-2 ">
+        <p className="text-gray-600 mt-2 mx-5 ">
           What sets Devshree apart is our commitment to delivering not just
           events, but memories that last a lifetime. Our holistic approach
           combines creativity, precision, and a deep understanding of your
@@ -37,21 +37,21 @@ const AboutUsPage = () => {
           reflection of your personality and style, and we're here to transform
           your ideas into reality.
         </p>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 mx-5">
           As a company, we value integrity, creativity, and exceptional customer
           service. We strive to make your journey with us enjoyable and
           stress-free, ensuring that you can fully savor every moment of your
           event or holiday. Your satisfaction is our ultimate goal, and we're
           honored to be part of your milestones.
         </p>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 mx-5">
           Thank you for considering Devshree as your partner in creating
           beautiful memories. We invite you to explore our portfolio and get in
           touch to start your journey towards an extraordinary event or a
           delightful holiday experience. Let us make your dreams come true, one
           event at a time.
         </p>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 mx-5">
           Warm regards,
           <br />
           <span className="font-bold">Ember Events Team</span>
