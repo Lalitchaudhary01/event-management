@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="flex items-center">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold">
-          Your Website Name {/* Or replace with your logo */}
+          EMber {/* Or replace with your logo */}
         </Link>
       </div>
 
