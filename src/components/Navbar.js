@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="flex items-center">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold">
-          EMber {/* Or replace with your logo */}
+          Ember {/* Or replace with your logo */}
         </Link>
       </div>
 
