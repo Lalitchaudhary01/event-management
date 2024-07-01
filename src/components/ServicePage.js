@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import DestinationWeddingsImage from "../images/destination wedding.webp";
-import Corporate from "../images/corporate event.jpg";
 import Service from "./Service";
 
 const ServicePage = () => {
@@ -10,58 +8,93 @@ const ServicePage = () => {
   // Grid items for initial display (2 grids)
   const initialGridItems = [
     {
-      image: DestinationWeddingsImage,
-      alt: "Destination Weddings",
-      title: "Destination Weddings",
-      description: "Plan your dream destination wedding with Devshree.",
+      image:
+        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+      alt: "Birthday Party",
+      title: "Birthday Party",
+      description: "Celebrate your special day with us.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://i.pinimg.com/564x/53/16/70/53167015a43b306921522d0650a81fba.jpg",
+      alt: "Wedding Events",
+      title: "Wedding Events",
+      description: "Make your wedding memorable with our services.",
     },
   ];
 
-  // Grid items for additional display (6 grids)
+  // Grid items for additional display (10 grids)
   const additionalGridItems = [
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+      alt: "Birthday Party",
+      title: "Birthday Party",
+      description: "Celebrate your special day with us.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://i.pinimg.com/564x/53/16/70/53167015a43b306921522d0650a81fba.jpg",
+      alt: "Wedding Events",
+      title: "Wedding Events",
+      description: "Make your wedding memorable with our services.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://english.cdn.zeenews.com/sites/default/files/2022/05/28/1047568-resort-wedding.jpg",
+      alt: "Destination Weddings",
+      title: "Destination Weddings",
+      description: "Plan your dream destination wedding with us.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://www.travelandtourworld.com/wp-content/uploads/2024/02/Award-General-850x485.jpg",
+      alt: "Award Function",
+      title: "Award Function",
+      description: "Host a grand award function with our expertise.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+      alt: "Sponsor Events",
+      title: "Sponsor Events",
+      description: "Organize successful sponsor events with our support.",
     },
     {
-      image: Corporate,
-      alt: "Devshree Holidays",
-      title: "Devshree Holidays",
-      description: "Explore the world with our curated holiday packages.",
+      image:
+        "https://www.ecohospitality.in/new-images/wedding/wedding-banner.jpg",
+      alt: "Hospitality",
+      title: "Hospitality",
+      description: "Experience top-notch hospitality services.",
     },
-    // Add more grid items here if needed
+    {
+      image:
+        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+      alt: "RSVP",
+      title: "RSVP",
+      description: "Manage your RSVP events effortlessly.",
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyDdLBW29tETzMKBN7K4bgUCYuXJ4YTGzXQ&s",
+      alt: "Corporate",
+      title: "Corporate",
+      description: "Host professional corporate events with us.",
+    },
+    {
+      image:
+        "https://tourismquest.com/wp-content/uploads/2024/03/Live-Concert.jpg",
+      alt: "Musical Conference",
+      title: "Musical Conference",
+      description: "Attend engaging musical conferences.",
+    },
+    {
+      image:
+        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+      alt: "Public & Private Events",
+      title: "Public & Private Events",
+      description: "Plan any public or private event with us.",
+    },
   ];
 
   const handleShowMore = () => {
@@ -72,8 +105,8 @@ const ServicePage = () => {
     <>
       <div className="text-center relative w-screen overflow-hidden ">
         <div className="mt-5">
-          <span className="rounded-full bg-gray-300 text-3xl px-3 py-1 text-indigo-700">
-            SERVICES
+          <span className="rounded-full w-40 bg-gray-300 text-4xl my-3 px-6 py-2 text-center text-indigo-700 hover:bg-indigo-700 hover:text-white transition-colors duration-300">
+            Services
           </span>
         </div>
         <p className="mt-4 my-4">
@@ -129,12 +162,12 @@ const ServicePage = () => {
                 ))}
           </section>
           {!showMore && (
-            <div class="relative inline-flex  group">
+            <div class="relative inline-flex  group mb-5">
               <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <Link
                 onClick={handleShowMore}
                 title="Get quote now"
-                class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
                 For more

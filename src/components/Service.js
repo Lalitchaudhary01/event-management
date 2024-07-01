@@ -12,21 +12,6 @@ const Service = () => {
             <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div className="flex justify-center">
                 <img
-                  src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp"
-                  className="w-32 mb-3"
-                  alt="Milling Machinery"
-                />
-              </div>
-              <h2 className="title-font font-medium text-2xl text-gray-900">
-                Latest Milling Machinery
-              </h2>
-            </div>
-          </div>
-
-          <div className="p-4 md:w-1/4 sm:w-1/2">
-            <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-              <div className="flex justify-center">
-                <img
                   src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp"
                   className="w-32 mb-3"
                   alt="Reasonable Rates"

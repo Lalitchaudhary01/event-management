@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  .page.carousel-1-page {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/432383263054.jpg) no-repeat center center;
+    background-size: cover; /* Cover the entire background */
+    padding: 0 8vw;
+  }
+  
+  .swiper {
+    width: 100%;
+    max-width: 800px;
+    height: 440px;
+  }
+  
+  .swiper-slide {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    filter: grayscale(0.6);
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height */
+    width: 200px; /* Adjust width */
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .swiper-slide a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 500;
+    background: #fff;
+    border-radius: 3.125rem;
+    margin: 0 auto;
+    padding: 10px 26px;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .swiper-slide a:hover {
+    color: #005baa;
+  }
+  
+  .swiper-slide div {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background: linear-gradient(rgb(0 0 0 / 0%) 55%, rgb(0 0 0 / 80%));
+    transition: 0.25s;
+    opacity: 0;
+    align-self: stretch;
+    padding-bottom: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .swiper-slide-active div {
+    opacity: 1;
+  }
+  
+  .swiper-slide > div > div {
+    translate: 0 100px;
+    transition: 0.3s;
+  }
+  
+  .swiper-slide-active > div > div {
+    translate: 0;
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff !important;
+  }
+  
+  .swiper-pagination {
+    bottom: 10px !important;
+    transform: scale(1.3);
+  }
+  
+  /* Style for navigation buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffffff; /* Color of the navigation buttons */
+  }
+  

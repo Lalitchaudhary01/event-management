@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faFacebook,
   faTwitter,
@@ -14,7 +15,10 @@ const Footer = () => {
         <div className="container px-4 mx-auto">
           <div className="-mx-4 flex flex-wrap justify-between">
             <div className="px-4 my-4 w-full xl:w-1/5">
-              <a href="/" className="block w-56 mb-10">
+              <a
+                href="/"
+                className="block w-56 mb-10 border-b-4 border-blue-600"
+              >
                 <text
                   fill="white"
                   font-family="Nunito-Bold, Nunito"
@@ -22,15 +26,15 @@ const Footer = () => {
                   font-weight="bold"
                 >
                   <tspan x="654" y="518">
-                    Tailwindow
+                    Ember Events
                   </tspan>
                 </text>
               </a>
               <p className="text-justify">
-                Tailwindow is a collection of UI Components created using
-                Tailwind CSS Framework. The UI Components give you all of the
-                building blocks you need to build any designs without any
-                annoying opinionated styles you have to fight to override.
+                Gate no. 2, Golden Leaf, Railway Station, 411, 4th floor, Tonk
+                Rd, Gandhi Nagar, Jaipur, Rajasthan 302015
+                <br></br>Phone: +91 98873 89999
+                <br></br>Email: emberevents@gmail.com
               </p>
             </div>
             <div class="px-4 my-4 w-full sm:w-auto">
@@ -41,9 +45,9 @@ const Footer = () => {
               </div>
               <ul class="leading-8">
                 <li>
-                  <a href="/" class="hover:text-blue-400">
-                    About Us
-                  </a>
+                  <Link to="/about" className="hover:text-gray-400">
+                    About
+                  </Link>
                 </li>
                 <li>
                   <a href="/" class="hover:text-blue-400">
@@ -56,9 +60,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="hover:text-blue-400">
-                    Contact Us
-                  </a>
+                  <Link to="/contact" className="hover:text-gray-400">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -71,27 +75,24 @@ const Footer = () => {
               <ul class="leading-8">
                 <li>
                   <a href="/" class="hover:text-blue-400">
-                    Getting Started With HTML and CSS
+                    Stay updated with the latest trends & <br></br> insights in
+                    event management!
                   </a>
                 </li>
                 <li>
                   <a href="/" class="hover:text-blue-400">
-                    What Is Flex And When to Use It?
+                    Dive into our blog for expert tips,<br></br> success
+                    stories, and innovative
                   </a>
                 </li>
                 <li>
                   <a href="/" class="hover:text-blue-400">
-                    How TailwindCSS Can Help Your Productivity?
+                    ideas to make your events unforgettable.<br></br>
                   </a>
                 </li>
                 <li>
                   <a href="/" class="hover:text-blue-400">
-                    5 Tips to Make Responsive Website
-                  </a>
-                </li>
-                <li>
-                  <a href="/" class="hover:text-blue-400">
-                    See More
+                    Explore now and get inspired with Devshree Yaember Event.
                   </a>
                 </li>
               </ul>
@@ -136,11 +137,11 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="-mx-4 flex flex-wrap justify-between">
             <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-              Copyright © 2020 - {new Date().getFullYear()} Tailwindow. All
+              Copyright © 2024 - {new Date().getFullYear()} Ember Events. All
               Rights Reserved.
             </div>
             <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-              Made with ❤️ by Tailwindow.
+              Made with ❤️ by Ember Events.
             </div>
           </div>
         </div>
