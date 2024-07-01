@@ -69,7 +69,7 @@ export const Carousel1 = () => {
             <div>
               <div>
                 <h2>{slide.title}</h2>
-                <a>explore</a>
+                <a href="/events">explore</a>
               </div>
             </div>
           </SwiperSlide>
