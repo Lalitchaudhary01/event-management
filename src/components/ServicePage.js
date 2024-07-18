@@ -137,7 +137,11 @@ const ServicePage = () => {
           <section className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 py-12">
             {showMore
               ? additionalGridItems.map((item, index) => (
-                  <Link key={index} to="/service-details" className="text-left">
+                  <Link
+                    key={index}
+                    to={`/service-details/${item.id}`}
+                    className="text-left"
+                  >
                     <div className="bg-white h-full p-6 rounded-md shadow-md overflow-hidden">
                       <img
                         src={item.image}

@@ -19,7 +19,6 @@ const services = [
     title: "Wedding Events",
     description: "Make your wedding memorable with our services.",
   },
-
   {
     id: 3,
     image:
