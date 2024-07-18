@@ -114,8 +114,8 @@ const ServicePage = () => {
           <span className="text-indigo-700 text-4xl font-bold">Services</span>
         </p>
         <p className="text-gray-700 text-center mx-10 my-4">
-          Creating unforgettable moments and turning dreams into reality,
-          Devshree offers a diverse range of services, from captivating weddings
+          Creating unforgettable moments and turning dreams into reality, Ember
+          Events offers a diverse range of services, from captivating weddings
           and idyllic holidays to warm hospitality and artistic experiences.
           With an eye for detail and a passion for perfection, we are your
           partners in crafting cherished memories that transcend time. Welcome
