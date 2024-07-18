@@ -6,6 +6,7 @@ import ServicePage from "./components/ServicePage";
 import ServiceDetailsPage from "./components/ServiceDetailsPage";
 import AboutUsPage from "./components/About";
 import Contact from "./components/Contact"; // Import the Contact component
+import TermsConditionsPage from "./components/TermsConditionsPage";
 
 function App() {
   const routes = [
@@ -14,6 +15,7 @@ function App() {
     { path: "/service-details", element: <ServiceDetailsPage /> },
     { path: "about", element: <AboutUsPage /> },
     { path: "/contact", element: <Contact /> }, // Add the Contact route
+    { path: "/terms", element: <TermsConditionsPage /> },
   ];
 
   return (

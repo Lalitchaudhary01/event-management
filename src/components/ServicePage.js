@@ -55,7 +55,7 @@ const ServicePage = () => {
     },
     {
       image:
-        "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+        "https://eventsbase.co.uk/wp-content/uploads/2022/10/Cvent-Europe-600x300-1.png",
       alt: "Sponsor Events",
       title: "Sponsor Events",
       description: "Organize successful sponsor events with our support.",

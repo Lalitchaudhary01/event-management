@@ -50,7 +50,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="/" class="hover:text-blue-400">
+                  <a href="/terms" class="hover:text-blue-400">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -92,7 +92,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="/" class="hover:text-blue-400">
-                    Explore now and get inspired with Devshree Yaember Event.
+                    Explore now and get inspired with Ember Events.
                   </a>
                 </li>
               </ul>

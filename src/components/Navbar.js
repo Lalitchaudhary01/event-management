@@ -6,8 +6,9 @@ const Navbar = () => {
     <nav className="bg-indigo-700 text-white flex items-center justify-between px-4 py-2 fixed top-0 w-full z-10">
       <div className="flex items-center">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold mx-60">
-          Ember {/* Or replace with your logo */}
+        <Link to="/">
+          <img alt="Logo" className="h-10" />
+          {/* Adjust height and width as needed */}
         </Link>
       </div>
 
