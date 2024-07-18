@@ -8,6 +8,7 @@ const ServicePage = () => {
   // Grid items for initial display (2 grids)
   const initialGridItems = [
     {
+      id: 1,
       image:
         "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
       alt: "Birthday Party",
@@ -15,6 +16,7 @@ const ServicePage = () => {
       description: "Celebrate your special day with us.",
     },
     {
+      id: 2,
       image:
         "https://i.pinimg.com/564x/53/16/70/53167015a43b306921522d0650a81fba.jpg",
       alt: "Wedding Events",
@@ -26,6 +28,7 @@ const ServicePage = () => {
   // Grid items for additional display (10 grids)
   const additionalGridItems = [
     {
+      id: 1,
       image:
         "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
       alt: "Birthday Party",
@@ -33,6 +36,7 @@ const ServicePage = () => {
       description: "Celebrate your special day with us.",
     },
     {
+      id: 2,
       image:
         "https://i.pinimg.com/564x/53/16/70/53167015a43b306921522d0650a81fba.jpg",
       alt: "Wedding Events",
@@ -40,6 +44,7 @@ const ServicePage = () => {
       description: "Make your wedding memorable with our services.",
     },
     {
+      id: 3,
       image:
         "https://english.cdn.zeenews.com/sites/default/files/2022/05/28/1047568-resort-wedding.jpg",
       alt: "Destination Weddings",
@@ -47,6 +52,7 @@ const ServicePage = () => {
       description: "Plan your dream destination wedding with us.",
     },
     {
+      id: 4,
       image:
         "https://www.travelandtourworld.com/wp-content/uploads/2024/02/Award-General-850x485.jpg",
       alt: "Award Function",
@@ -54,6 +60,7 @@ const ServicePage = () => {
       description: "Host a grand award function with our expertise.",
     },
     {
+      id: 5,
       image:
         "https://eventsbase.co.uk/wp-content/uploads/2022/10/Cvent-Europe-600x300-1.png",
       alt: "Sponsor Events",
@@ -61,6 +68,7 @@ const ServicePage = () => {
       description: "Organize successful sponsor events with our support.",
     },
     {
+      id: 6,
       image:
         "https://www.ecohospitality.in/new-images/wedding/wedding-banner.jpg",
       alt: "Hospitality",
@@ -68,6 +76,7 @@ const ServicePage = () => {
       description: "Experience top-notch hospitality services.",
     },
     {
+      id: 7,
       image:
         "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
       alt: "RSVP",
@@ -75,6 +84,7 @@ const ServicePage = () => {
       description: "Manage your RSVP events effortlessly.",
     },
     {
+      id: 8,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyDdLBW29tETzMKBN7K4bgUCYuXJ4YTGzXQ&s",
       alt: "Corporate",
@@ -82,6 +92,7 @@ const ServicePage = () => {
       description: "Host professional corporate events with us.",
     },
     {
+      id: 9,
       image:
         "https://tourismquest.com/wp-content/uploads/2024/03/Live-Concert.jpg",
       alt: "Musical Conference",
@@ -89,6 +100,7 @@ const ServicePage = () => {
       description: "Attend engaging musical conferences.",
     },
     {
+      id: 10,
       image:
         "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
       alt: "Public & Private Events",
@@ -143,7 +155,11 @@ const ServicePage = () => {
                   </Link>
                 ))
               : initialGridItems.map((item, index) => (
-                  <Link key={index} to="/service-details" className="text-left">
+                  <Link
+                    key={index}
+                    to={`/service-details/${item.id}`}
+                    className="text-left"
+                  >
                     <div className="bg-white h-full p-6 rounded-md shadow-md overflow-hidden">
                       <img
                         src={item.image}

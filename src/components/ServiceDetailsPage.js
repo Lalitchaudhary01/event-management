@@ -1,66 +1,121 @@
 import React from "react";
-import DestinationWeddingsImage from "../images/destination wedding.webp";
+import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 
+const services = [
+  {
+    id: 1,
+    image:
+      "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+    alt: "Birthday Party",
+    title: "Birthday Party",
+    description: "Celebrate your special day with us.",
+  },
+  {
+    id: 2,
+    image:
+      "https://i.pinimg.com/564x/53/16/70/53167015a43b306921522d0650a81fba.jpg",
+    alt: "Wedding Events",
+    title: "Wedding Events",
+    description: "Make your wedding memorable with our services.",
+  },
+
+  {
+    id: 3,
+    image:
+      "https://english.cdn.zeenews.com/sites/default/files/2022/05/28/1047568-resort-wedding.jpg",
+    alt: "Destination Weddings",
+    title: "Destination Weddings",
+    description: "Plan your dream destination wedding with us.",
+  },
+  {
+    id: 4,
+    image:
+      "https://www.travelandtourworld.com/wp-content/uploads/2024/02/Award-General-850x485.jpg",
+    alt: "Award Function",
+    title: "Award Function",
+    description: "Host a grand award function with our expertise.",
+  },
+  {
+    id: 5,
+    image:
+      "https://eventsbase.co.uk/wp-content/uploads/2022/10/Cvent-Europe-600x300-1.png",
+    alt: "Sponsor Events",
+    title: "Sponsor Events",
+    description: "Organize successful sponsor events with our support.",
+  },
+  {
+    id: 6,
+    image:
+      "https://www.ecohospitality.in/new-images/wedding/wedding-banner.jpg",
+    alt: "Hospitality",
+    title: "Hospitality",
+    description: "Experience top-notch hospitality services.",
+  },
+  {
+    id: 7,
+    image:
+      "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+    alt: "RSVP",
+    title: "RSVP",
+    description: "Manage your RSVP events effortlessly.",
+  },
+  {
+    id: 8,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyDdLBW29tETzMKBN7K4bgUCYuXJ4YTGzXQ&s",
+    alt: "Corporate",
+    title: "Corporate",
+    description: "Host professional corporate events with us.",
+  },
+  {
+    id: 9,
+    image:
+      "https://tourismquest.com/wp-content/uploads/2024/03/Live-Concert.jpg",
+    alt: "Musical Conference",
+    title: "Musical Conference",
+    description: "Attend engaging musical conferences.",
+  },
+  {
+    id: 10,
+    image:
+      "https://i.pinimg.com/564x/fc/74/e0/fc74e0344f537ba472f9268c6ff5abbc.jpg",
+    alt: "Public & Private Events",
+    title: "Public & Private Events",
+    description: "Plan any public or private event with us.",
+  },
+];
+
 const ServiceDetailsPage = () => {
+  const { id } = useParams();
+  const service = services.find((service) => service.id === parseInt(id));
+
+  if (!service) {
+    return <p className="text-center text-red-600 mt-8">Service not found</p>;
+  }
+
   return (
     <>
       <div className="text-center my-12">
-        <span className="rounded-full bg-gray-300 text-4xl px-6 py-2 text-red-800 hover:bg-red-800 hover:text-white transition-colors duration-300 mt-10"></span>
-        <div className="mt-8 max-w-5xl mx-auto">
+        <h1 className="text-4xl font-bold text-blue-800 mb-4  p-4">
+          {service.title}
+        </h1>
+        <div className="max-w-3xl mx-auto">
           <div className="flex justify-center items-center mb-6">
             <img
-              src={DestinationWeddingsImage}
-              alt="Destination Weddings"
-              className="h-64 w-94 object-cover ring-4 ring-gray-300 hover:ring-blue-800 hover:transform hover:scale-110 transition duration-300"
+              src={service.image}
+              alt={service.alt}
+              className="h-80 w-full object-cover rounded-lg shadow-lg hover:shadow-xl transition duration-300"
             />
           </div>
-          <h3 className="text-3xl font-bold text-gray-800 mt-4 text-left">
-            Destination Weddings
-          </h3>
-          <p className="text-gray-600 mt-4 text-left leading-relaxed">
-            Devshree Wedding Planner is a wedding planning company based in the
-            city of Ahmednagar. A wedding planner is a who supports the design,
-            planning and administration of a couple's wedding reception.
-            Weddings are important events in people's lives and as such, couples
-            are often willing to spend a substantial amount of money to secure
-            that their wedlocks are well-organised and thought by a professional
-            specialist. Wedding planners are a great team who plan every wedding
-            function smoothly.
-          </p>
-          <p className="text-gray-600 mt-4 text-left leading-relaxed">
-            From planning your little events like pre-wedding to the wedding
-            day, there would not be a bit of a second when you will not think
-            about your planning of wedding parties. To take away all the stress
-            and responsibility, Devshree Wedding Planners have a team of
-            well-trained and hardworking wedding planners who will plan various
-            celebrations in the most interesting way. As per your location, they
-            are ready to give their support and make your event an extraordinary
-            one. Devshree Wedding Planners propose a lot of tailor-made settings
-            which can be customised as per your preferences and rates.
-          </p>
-          <ul className="list-disc list-inside text-left text-gray-600 mt-4 leading-relaxed">
-            <li>Venue selection</li>
-            <li>Catering</li>
-            <li>Photography/Videography</li>
-            <li>Styling & grooming</li>
-            <li>Decoration</li>
-            <li>DJ & entertainment</li>
-            <li>Guests transfers</li>
-            <li>Hospitality & guests support</li>
-            <li>Invitations</li>
-          </ul>
-          <p className="text-gray-600 mt-4 text-left leading-relaxed">
-            Planning a destination wedding can be overwhelming, but with
-            Devshree Wedding Planners, you can relax and enjoy every moment.
-            With our meticulous planning and attention to detail, we ensure that
-            everything runs smoothly from start to finish. Leave all the
-            logistics and coordination to us while you soak in the joy of your
-            special day. Your wedding day is not just an event; it's an
-            experience that will be remembered for a lifetime. With our
-            expertise in creating unforgettable moments, we will help you create
-            memories that you and your loved ones will cherish forever.
-          </p>
+          <div className="text-left">
+            <h2 className="text-2xl font-bold text-gray-800 mb-2">
+              Description
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              {service.description}
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
