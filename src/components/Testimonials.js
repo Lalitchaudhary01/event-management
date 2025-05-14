@@ -10,7 +10,7 @@ const Testimonials = () => {
         "Working with Ember Events was the best decision we made for our wedding. Their attention to detail, creativity, and flawless execution made our special day absolutely perfect. Every moment was carefully crafted and our guests are still talking about it months later!",
       name: "Manya Arora",
       role: "Wedding Clients",
-      initials: "JM",
+      initials: "MA",
     },
     {
       quote:
@@ -31,7 +31,7 @@ const Testimonials = () => {
         "For our annual charity gala, we needed something extraordinary. Ember Events delivered beyond our expectations, helping us raise record funds while creating a memorable evening for all attendees.",
       name: "Lalit Chaudhary",
       role: "Non-profit Organizer",
-      initials: "DC",
+      initials: "LC",
     },
   ];
 
