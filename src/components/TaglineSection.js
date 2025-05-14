@@ -1,9 +1,113 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
 
 const TaglineSection = () => {
+  const mountRef = useRef(null);
+  const animationRef = useRef(null);
+
+  useEffect(() => {
+    // Create Three.js scene
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x000000, 0);
+    mountRef.current.appendChild(renderer.domElement);
+
+    // Position camera
+    camera.position.z = 5;
+
+    // Create floating particles
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCount = 200;
+
+    const posArray = new Float32Array(particlesCount * 3);
+    for (let i = 0; i < particlesCount * 3; i++) {
+      // Create a spread out field of particles
+      posArray[i] = (Math.random() - 0.5) * 15;
+    }
+
+    particlesGeometry.setAttribute(
+      "position",
+      new THREE.BufferAttribute(posArray, 3)
+    );
+
+    // Purple-ish material for particles
+    const particlesMaterial = new THREE.PointsMaterial({
+      size: 0.02,
+      color: 0x9c27b0,
+      transparent: true,
+      opacity: 0.8,
+      blending: THREE.AdditiveBlending,
+    });
+
+    // Create particle system
+    const particlesMesh = new THREE.Points(
+      particlesGeometry,
+      particlesMaterial
+    );
+    scene.add(particlesMesh);
+
+    // Add subtle ambient light
+    const ambientLight = new THREE.AmbientLight(0xb388ff, 0.5);
+    scene.add(ambientLight);
+
+    // Add directional light for better depth
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
+
+    // Animation function
+    const animate = () => {
+      particlesMesh.rotation.x += 0.0003;
+      particlesMesh.rotation.y += 0.0005;
+
+      // Get scroll position to move particles slightly with scroll
+      const scrollY = window.scrollY || window.pageYOffset;
+      particlesMesh.position.y = scrollY * -0.001;
+
+      renderer.render(scene, camera);
+      animationRef.current = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    // Responsive handling
+    const handleResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+      if (mountRef.current && renderer.domElement) {
+        mountRef.current.removeChild(renderer.domElement);
+      }
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-5xl mx-auto px-6 relative">
+    <div className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      {/* Three.js container - positioned absolutely to overlay content */}
+      <div
+        ref={mountRef}
+        className="absolute inset-0 z-0 pointer-events-none"
+      />
+
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         {/* Decorative elements */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-12 flex flex-col items-center w-full">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
