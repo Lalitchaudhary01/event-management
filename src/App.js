@@ -1,32 +1,27 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import ServicePage from "./components/ServicePage";
-import ServiceDetailsPage from "./components/ServiceDetailsPage";
-import AboutUsPage from "./components/About";
-import Contact from "./components/Contact";
-import TermsConditionsPage from "./components/TermsConditionsPage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-  const routes = [
-    { path: "/", element: <Home /> },
-    { path: "/events", element: <ServicePage /> },
-    { path: "/service-details/:id", element: <ServiceDetailsPage /> },
-    { path: "/about", element: <AboutUsPage /> }, // Corrected path with leading slash
-    { path: "/contact", element: <Contact /> },
-    { path: "/terms", element: <TermsConditionsPage /> },
-  ];
-
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        {routes.map((route) => (
-          <Route key={route.path} path={route.path} element={route.element} />
-        ))}
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* Add more routes as needed */}
+            {/* <Route path="/about" element={<About />} /> */}
+            {/* <Route path="/services" element={<Services />} /> */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,17 +1,27 @@
-// Home.js
 import React from "react";
-import ServicePage from "./ServicePage";
-import AboutUsPage from "./About";
-import Footer from "./Footer";
-import { Carousel1 } from "./Carousel1";
+import HeroSlider from "../components/HeroSlider";
+import TaglineSection from "../components/TaglineSection";
+import FeaturedServices from "../components/FeaturedServices";
+import Testimonials from "../components/Testimonials";
+import CallToAction from "../components/CallToAction";
 
 const Home = () => {
   return (
-    <div className="container">
-      <Carousel1 />
-      <ServicePage />
-      <AboutUsPage />
-      <Footer />
+    <div className="pt-24 bg-gradient-to-br from-purple-50 to-pink-50">
+      {/* Hero Slider Component */}
+      <HeroSlider />
+
+      {/* Tagline Section Component */}
+      <TaglineSection />
+
+      {/* Featured Services Component */}
+      <FeaturedServices />
+
+      {/* Testimonials Component */}
+      <Testimonials />
+
+      {/* Call to Action Component */}
+      <CallToAction />
     </div>
   );
 };
