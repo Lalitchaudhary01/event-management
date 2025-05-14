@@ -184,7 +184,7 @@ const FeaturedServices = () => {
                   </p>
 
                   <a
-                    href={`/services#${service.title
+                    href={`/services/${service.title
                       .toLowerCase()
                       .replace(" ", "-")}`}
                     className="inline-flex items-center text-purple-700 hover:text-purple-900 font-medium transition-all duration-300 relative overflow-hidden group-hover:font-semibold"
