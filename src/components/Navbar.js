@@ -175,10 +175,10 @@ const Navbar = () => {
               About
             </a>
             <a
-              href="/contact"
+              href="/portfolio"
               className="block px-3 py-2 rounded-md text-base font-light text-purple-600 hover:text-purple-800 hover:bg-purple-100"
             >
-              Contact
+              Portfolio
             </a>
             {/* Mobile WhatsApp button */}
             <a
