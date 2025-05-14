@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Aboutus from "./components/Aboutus";
 import FeaturedServices from "./components/FeaturedServices";
 import Events from "./components/Event";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<Aboutus />} />
             <Route path="/services" element={<FeaturedServices />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
         </main>
         <Footer />

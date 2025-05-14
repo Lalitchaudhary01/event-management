@@ -27,7 +27,7 @@ const Footer = () => {
               {/* Logo */}
               <div className="h-12 w-12 flex items-center justify-center relative">
                 <img
-                  src="https://ik.imagekit.io/yg3bo4zvy/events_logo-removebg-preview.png?updatedAt=1747201717497"
+                  src="https://ik.imagekit.io/yg3bo4zvy/EVENTS/lo-removebg-preview.png?updatedAt=1747212948299"
                   alt="Ember Events Logo"
                   className="w-full h-full object-contain drop-shadow-lg"
                 />
@@ -290,8 +290,8 @@ const Footer = () => {
 
         {/* Newsletter & Bottom Bar */}
         <div className="mt-16 border-t border-purple-700 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <div className="mb-6 lg:mb-0">
+          <div className="flex flex-col lg:flex-row justify-between items-center ">
+            {/* <div className="mb-6 lg:mb-0">
               <h4 className="text-lg font-medium mb-3 text-pink-200">
                 Subscribe to Our Newsletter
               </h4>
@@ -305,9 +305,9 @@ const Footer = () => {
                   Subscribe
                 </button>
               </div>
-            </div>
+            </div> */}
 
-            <div className="text-center lg:text-right text-sm text-gray-300">
+            <div className=" text-center lg:text-right text-sm text-gray-300">
               <p>
                 &copy; {new Date().getFullYear()} Ember Events. All rights
                 reserved.
