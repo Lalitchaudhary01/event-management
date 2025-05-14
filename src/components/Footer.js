@@ -140,7 +140,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/gallery"
+                  to="/portfolio"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Gallery

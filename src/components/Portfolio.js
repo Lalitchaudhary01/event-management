@@ -59,8 +59,17 @@ const Portfolio = () => {
     },
   ];
 
-  // Gallery images (using placeholders)
-  const galleryImages = [1, 2, 3, 4, 5, 6];
+  // Gallery images using ImageKit links
+  const galleryImages = [
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.10_287212ff.jpg?updatedAt=1747224938813",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.11_b27552bc.jpg?updatedAt=1747224940891",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
@@ -245,7 +254,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      {/* Gallery Section - Updated with ImageKit images */}
       <section
         id="gallery"
         className={`py-16 px-4 bg-gradient-to-br from-purple-100 to-pink-100 ${
@@ -257,32 +266,47 @@ const Portfolio = () => {
             Our Gallery
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((img, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.map((imageUrl, index) => (
               <div
                 key={index}
-                className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <img
-                  src={`/api/placeholder/400/300?text=Event ${img}`}
-                  alt={`Ember Events Gallery ${img}`}
-                  className="w-full h-full object-cover"
+                  src={imageUrl}
+                  alt={`Ember Events Gallery ${index + 1}`}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <p className="text-white p-4 font-medium">
+                    Event {index + 1}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
             <h3 className="text-xl font-serif text-purple-700 mb-4">
-              Highlights & Others
+              Highlights & More
             </h3>
             <p className="text-gray-700 max-w-2xl mx-auto">
-              Thank you for reviewing the portfolio. We invite you to delve into
+              Thank you for reviewing our portfolio. We invite you to explore
               our wedding highlights and discover the reviews shared on various
-              portals to gain deeper insights into our work and client
+              platforms to gain deeper insights into our work and client
               experiences.
             </p>
-            <p className="mt-4 font-medium">Following link: ember_events</p>
+            <div className="mt-6">
+              <a
+                href="https://www.instagram.com/ember_events_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors duration-300"
+              >
+                <span className="mr-2">Follow Us @ember_events_</span>
+                <span>→</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
