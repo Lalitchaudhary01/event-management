@@ -9,10 +9,12 @@ import {
   Building,
   ChevronLeft,
   ChevronRight,
+  Truck,
+  ShoppingBag,
 } from "lucide-react";
 
 const FeaturedServices = () => {
-  // Enhanced featured services with more premium descriptions
+  // Enhanced featured services with more premium descriptions and two new services
   const services = [
     {
       title: "Wedding Planning",
@@ -55,6 +57,18 @@ const FeaturedServices = () => {
       icon: <Star className="w-10 h-10 text-purple-600" />,
       description:
         "Privileged access to exclusive, sought-after venues and hidden gems worldwide, perfectly aligned with your prestigious vision.",
+    },
+    {
+      title: "Logistics Excellence",
+      icon: <Truck className="w-10 h-10 text-purple-600" />,
+      description:
+        "Impeccable event logistics management with precision timing, seamless transportation coordination, and flawless technical execution.",
+    },
+    {
+      title: "Vendor Partnerships",
+      icon: <ShoppingBag className="w-10 h-10 text-purple-600" />,
+      description:
+        "Access to our exclusive network of elite vendors and artisans, meticulously curated to deliver unparalleled quality and distinction.",
     },
   ];
 

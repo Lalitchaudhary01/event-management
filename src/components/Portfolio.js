@@ -3,6 +3,13 @@ import React, { useState } from "react";
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("about");
 
+  // WhatsApp contact details
+  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+  const whatsappMessage = "Hello! Can I get more information.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   // Navigation sections
   const sections = [
     { id: "about", label: "About Us" },
@@ -64,11 +71,11 @@ const Portfolio = () => {
     "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.10_287212ff.jpg?updatedAt=1747224938813",
     "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.11_b27552bc.jpg?updatedAt=1747224940891",
     "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
-    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
-    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
-    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
-    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
-    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/5.jpg?updatedAt=1747236297204",
+    "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2020.52.23_896def97.jpg?updatedAt=1747236297598",
+    "https://ik.imagekit.io/icrguob6c/event/3.jpg?updatedAt=1747236884307",
+    "https://ik.imagekit.io/icrguob6c/event/4.jpg?updatedAt=1747236884312",
+    "https://ik.imagekit.io/icrguob6c/event/1.jpg?updatedAt=1747236884242",
   ];
 
   return (
@@ -87,10 +94,17 @@ const Portfolio = () => {
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Ember Events</h1>
           <p className="text-xl md:text-2xl font-light">By Amar & Isha</p>
-          <p className="mt-6 text-lg md:text-xl italic">!!अतथ तुम कब आओगे!!</p>
-          <button className="mt-8 px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+          <p className="mt-6 text-lg md:text-xl italic">
+            !! अतिथि तुम कब आओगे !!
+          </p>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+          >
             Book Consultation
-          </button>
+          </a>
         </div>
       </div>
 
@@ -349,6 +363,18 @@ const Portfolio = () => {
                     <span className="text-purple-600 mr-2">📸</span>
                     <span>@ember_events</span>
                   </div>
+                </div>
+
+                <div className="mt-6">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300"
+                  >
+                    <span className="mr-2">Chat with us on WhatsApp</span>
+                    <span>→</span>
+                  </a>
                 </div>
               </div>
 
