@@ -79,7 +79,7 @@ const FeaturedServices = () => {
       description:
         "Access to an elite portfolio of performers, renowned speakers, and sophisticated entertainment tailored precisely to your event.",
       fullDescription:
-        "Our artist curation service provides access to an exclusive network of world-class performers and entertainers perfectly matched to your event's atmosphere and audience. From Grammy-winning musicians and celebrity DJs to captivating speakers and unique specialty acts, we handle all aspects of talent selection, contract negotiation, and performance logistics to create unforgettable entertainment experiences for your guests.",
+        "Our artist curation service provides access to an exclusive network of world-class performers and entertainers perfectly matched to your event's atmosphere and audience. From Grammy-winning musicians and celebrity DJs to captivating speakers and unique specialty acts, we handle all aspects of talent selection, contract negotiation, and performance logistics to create unforgettable entertainment experiences for your guests We are  providing makeup artist and photographer as well.",
       image:
         "https://ik.imagekit.io/icrguob6c/event/artist.jpg?updatedAt=1747242629593",
     },
