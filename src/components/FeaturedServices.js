@@ -47,16 +47,17 @@ const FeaturedServices = () => {
         "Extraordinary celebrations in world-class destinations, expertly orchestrated with seamless logistics and breathtaking experiences.",
       fullDescription:
         "Transform your event into an extraordinary journey with our destination event planning services. We specialize in creating immersive experiences in the world's most stunning locations. Our expert team handles complex logistics including travel arrangements, accommodations, local permits, and cultural considerations, allowing your guests to enjoy a seamless and unforgettable experience in breathtaking settings.",
-      image: "/api/placeholder/700/400",
+      image:
+        "https://ik.imagekit.io/icrguob6c/event/destination.jpg?updatedAt=1747244162249",
     },
     {
-      id: "elite-coordination",
-      title: "Elite Coordination",
+      id: "Team Providers",
+      title: "Team Providers",
       icon: <Users className="w-10 h-10 text-purple-600" />,
       description:
         "Meticulous management of premier vendors, specialized professionals, and skilled staff ensuring flawless execution of your vision.",
       fullDescription:
-        "Our elite coordination service brings together the finest vendors and professionals in the industry to execute your vision with precision and elegance. We meticulously manage every aspect of your event, from selecting the perfect team to overseeing each detail during execution. Our seasoned coordinators ensure seamless communication and flawless timing, allowing you to enjoy your event with complete peace of mind.",
+        "Our team coordination service brings together the finest vendors and professionals in the industry to execute your vision with precision and elegance. We meticulously manage every aspect of your event, from selecting the perfect team to overseeing each detail during execution. Our seasoned coordinators ensure seamless communication and flawless timing, allowing you to enjoy your event with complete peace of mind.",
       image:
         "https://ik.imagekit.io/icrguob6c/event/team%20elite.jpg?updatedAt=1747242629833",
     },
@@ -79,7 +80,8 @@ const FeaturedServices = () => {
         "Access to an elite portfolio of performers, renowned speakers, and sophisticated entertainment tailored precisely to your event.",
       fullDescription:
         "Our artist curation service provides access to an exclusive network of world-class performers and entertainers perfectly matched to your event's atmosphere and audience. From Grammy-winning musicians and celebrity DJs to captivating speakers and unique specialty acts, we handle all aspects of talent selection, contract negotiation, and performance logistics to create unforgettable entertainment experiences for your guests.",
-      image: "/api/placeholder/700/400",
+      image:
+        "https://ik.imagekit.io/icrguob6c/event/artist.jpg?updatedAt=1747242629593",
     },
     {
       id: "venue-selection",
@@ -111,7 +113,8 @@ const FeaturedServices = () => {
         "Access to our exclusive network of elite vendors and artisans, meticulously curated to deliver unparalleled quality and distinction.",
       fullDescription:
         "Leverage our carefully cultivated network of premier vendors and artisans to bring exceptional quality to every aspect of your event. Our longstanding relationships with the industry's finest professionals—from renowned chefs and floral designers to luxury rental companies and master craftsmen—ensure priority booking, preferential pricing, and uncompromising quality for your event. Each vendor in our network has been personally vetted to meet our exacting standards of excellence.",
-      image: "/api/placeholder/700/400",
+      image:
+        "https://ik.imagekit.io/icrguob6c/event/vendors.jpg?updatedAt=1747244247624",
     },
   ];
 

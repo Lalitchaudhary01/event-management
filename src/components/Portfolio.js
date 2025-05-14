@@ -84,7 +84,7 @@ const Portfolio = () => {
       <div className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/api/placeholder/1920/1080"
+            src="https://ik.imagekit.io/icrguob6c/event/welcome.jpg?updatedAt=1747243920964"
             alt="Ember Events Wedding"
             className="w-full h-full object-cover"
           />
