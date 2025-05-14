@@ -195,10 +195,13 @@ const Portfolio = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex items-center justify-center">
-              <img
-                src="/api/placeholder/500/500"
-                alt="Wedding Management"
+              <video
+                src="https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Video%202025-05-14%20at%2014.52.30_392beb0b.mp4?updatedAt=1747224733105"
                 className="rounded-xl shadow-xl"
+                controls
+                autoPlay
+                muted
+                loop
               />
             </div>
 
