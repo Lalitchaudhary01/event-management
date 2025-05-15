@@ -93,7 +93,7 @@ const Portfolio = () => {
 
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Ember Events</h1>
-          <p className="text-xl md:text-2xl font-light">By Amar & Isha</p>
+          <p className="text-xl md:text-2xl font-light">By Amar & Isha--</p>
           <p className="mt-6 text-lg md:text-xl italic">
             !! अतिथि तुम कब आओगे !!
           </p>
