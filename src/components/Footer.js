@@ -281,7 +281,7 @@ const Footer = () => {
                   href="mailto:emberevents9027@gmail.com"
                   className="hover:text-pink-200"
                 >
-                  emberevents9027@gmail.com
+                  info@emberevents.in
                 </a>
               </p>
             </address>
