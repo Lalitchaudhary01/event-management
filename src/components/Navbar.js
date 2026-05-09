@@ -58,7 +58,7 @@ const Navbar = () => {
                 {/* Increased logo size */}
                 <div className="h-16 w-16 flex items-center justify-center relative">
                   <img
-                    src="https://ik.imagekit.io/yg3bo4zvy/EVENTS/lo-removebg-preview.png?updatedAt=1747212948299"
+                    src="/ember-logo.svg"
                     alt="Ember Events Logo"
                     className="w-full h-full object-contain drop-shadow-lg"
                   />

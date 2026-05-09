@@ -82,7 +82,7 @@ const Contact = ({ activeSection }) => {
                   <div>
                     <p className="font-medium">Address</p>
                     <p className="text-purple-100">
-                      863- Vyas Colony, Shastri Nagar, Jaipur, Rajasthan 302016
+                      13 Anand Bhawan, Gurunanakpura, Raja Park, Jaipur
                     </p>
                   </div>
                 </div>

@@ -10,6 +10,7 @@ import FeaturedServices from "./components/FeaturedServices";
 import Events from "./components/Event";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import LegalPage from "./components/LegalPage";
 
 function App() {
   const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
@@ -27,6 +28,8 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<LegalPage type="privacy" />} />
+            <Route path="/terms" element={<LegalPage type="terms" />} />
           </Routes>
         </main>
         <Footer />

@@ -356,7 +356,7 @@ const Portfolio = () => {
                   <div className="flex items-center">
                     <span className="text-purple-600 mr-2">📍</span>
                     <span>
-                      863- Vyas Colony, Shastri Nagar, Jaipur, Rajasthan 302016
+                      13 Anand Bhawan, Gurunanakpura, Raja Park, Jaipur
                     </span>
                   </div>
                   <div className="flex items-center">

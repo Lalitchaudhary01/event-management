@@ -27,7 +27,7 @@ const Footer = () => {
               {/* Logo */}
               <div className="h-12 w-12 flex items-center justify-center relative">
                 <img
-                  src="https://ik.imagekit.io/yg3bo4zvy/EVENTS/lo-removebg-preview.png?updatedAt=1747212948299"
+                  src="/ember-logo.svg"
                   alt="Ember Events Logo"
                   className="w-full h-full object-contain drop-shadow-lg"
                 />
@@ -232,11 +232,11 @@ const Footer = () => {
                   </svg>
                 </span>
                 <span>
-                  FF - 89 VYAS COLONY
+                  13 Anand Bhawan
                   <br />
-                  SHASTRI NAGAR
+                  Gurunanakpura, Raja Park
                   <br />
-                  JAIPUR 302016
+                  Jaipur
                 </span>
               </p>
               <p className="flex items-center">
@@ -323,7 +323,7 @@ const Footer = () => {
                   to="/terms"
                   className="hover:text-pink-200 transition-colors"
                 >
-                  Terms of Service
+                  Terms & Conditions
                 </Link>
               </div>
             </div>
