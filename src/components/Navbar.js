@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Menu,
   X,
-  ChevronDown,
   Calendar,
   User,
   MessageSquare,
@@ -121,13 +120,13 @@ const Navbar = () => {
 
             {/* CTA Button - Modified for WhatsApp redirect */}
             <div className="hidden md:block">
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={redirectToWhatsApp}
                 className="inline-flex items-center px-6 py-2 border border-purple-300 text-sm font-medium rounded-full shadow-md text-white bg-gradient-to-r from-purple-400 to-pink-300 hover:from-purple-300 hover:to-pink-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400 transform transition-transform hover:-translate-y-1"
               >
                 BOOK CONSULTATION
-              </a>
+              </button>
             </div>
 
             {/* Mobile menu button */}
@@ -181,13 +180,13 @@ const Navbar = () => {
               Portfolio
             </a>
             {/* Mobile WhatsApp button */}
-            <a
-              href="#"
+            <button
+              type="button"
               onClick={redirectToWhatsApp}
-              className="block px-3 py-2 text-center rounded-full text-base font-medium text-white bg-gradient-to-r from-purple-400 to-pink-300 hover:from-purple-300 hover:to-pink-200 mt-4"
+              className="block w-full px-3 py-2 text-center rounded-full text-base font-medium text-white bg-gradient-to-r from-purple-400 to-pink-300 hover:from-purple-300 hover:to-pink-200 mt-4"
             >
               Book Consultation
-            </a>
+            </button>
           </div>
         </div>
       </nav>

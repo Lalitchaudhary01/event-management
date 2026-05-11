@@ -18,7 +18,8 @@ const TaglineSection = () => {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x000000, 0);
-    mountRef.current.appendChild(renderer.domElement);
+    const mountElement = mountRef.current;
+    mountElement.appendChild(renderer.domElement);
 
     // Position camera
     camera.position.z = 5;
@@ -92,8 +93,8 @@ const TaglineSection = () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
-      if (mountRef.current && renderer.domElement) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (mountElement && renderer.domElement) {
+        mountElement.removeChild(renderer.domElement);
       }
       window.removeEventListener("resize", handleResize);
     };

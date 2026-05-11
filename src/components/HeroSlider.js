@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ArrowLeft, ArrowRight, Calendar, MapPin, Star } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const HeroSlider = () => {
   // State for image slider
@@ -79,10 +79,6 @@ const HeroSlider = () => {
 
   const goToPrev = () => {
     setCurrentSlide((prev) => (prev === 0 ? eventSlides.length - 1 : prev - 1));
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
   };
 
   return (

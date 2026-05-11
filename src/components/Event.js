@@ -8,7 +8,6 @@ const Event = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [animateItems, setAnimateItems] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [activePreview, setActivePreview] = useState(null);
 
   // Gallery media items
@@ -64,17 +63,6 @@ const Event = () => {
       url: "https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Image%202025-05-14%20at%2016.56.33_a56e14ac.jpg?updatedAt=1747224917789",
     },
   ];
-
-  // Check if device is mobile
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
 
   // Auto-rotates the sliders
   useEffect(() => {

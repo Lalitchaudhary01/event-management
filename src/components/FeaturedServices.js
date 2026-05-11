@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
   Calendar,
   Star,
@@ -140,9 +140,9 @@ const FeaturedServices = () => {
   };
 
   // Navigate to next set of services
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 3 >= services.length ? 0 : prev + 3));
-  };
+  }, [services.length]);
 
   // Open service details modal
   const openServiceDetails = (serviceId) => {
@@ -181,7 +181,7 @@ const FeaturedServices = () => {
       }, 5000);
       return () => clearInterval(interval);
     }
-  }, [currentIndex, isHovering, selectedService]);
+  }, [currentIndex, isHovering, selectedService, nextSlide]);
 
   return (
     <div className="py-32 bg-gradient-to-b from-white via-purple-50 to-white">
