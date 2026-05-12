@@ -158,7 +158,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/services"
+                  to="/services/weddings"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Weddings
@@ -166,7 +166,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/corporate"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Corporate Events
@@ -174,7 +174,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/galas"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Galas &
@@ -183,7 +183,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/parties"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Birthday Parties
@@ -191,7 +191,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/special"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Special

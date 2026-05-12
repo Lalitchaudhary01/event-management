@@ -11,6 +11,7 @@ import Events from "./components/Event";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import LegalPage from "./components/LegalPage";
+import ServiceDetailPage from "./components/ServiceDetailPage";
 
 function App() {
   const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
@@ -30,6 +31,26 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<LegalPage type="privacy" />} />
             <Route path="/terms" element={<LegalPage type="terms" />} />
+            <Route
+              path="/services/weddings"
+              element={<ServiceDetailPage serviceKey="weddings" />}
+            />
+            <Route
+              path="/services/corporate"
+              element={<ServiceDetailPage serviceKey="corporate" />}
+            />
+            <Route
+              path="/services/galas"
+              element={<ServiceDetailPage serviceKey="galas" />}
+            />
+            <Route
+              path="/services/parties"
+              element={<ServiceDetailPage serviceKey="parties" />}
+            />
+            <Route
+              path="/services/special"
+              element={<ServiceDetailPage serviceKey="special" />}
+            />
           </Routes>
         </main>
         <Footer />
