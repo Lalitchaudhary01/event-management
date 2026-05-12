@@ -122,6 +122,8 @@ const FeaturedServices = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
   const carouselRef = useRef(null);
+  const whatsappUrl =
+    "https://wa.me/919027195011?text=Hello! Can I get more information.";
 
   // Calculate the indices of services to display (3 at a time)
   const getVisibleIndices = () => {
@@ -409,7 +411,12 @@ const FeaturedServices = () => {
                   </div>
 
                   <div className="pt-6">
-                    <button className="bg-purple-600 hover:bg-purple-700 text-white py-3 px-8 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-purple-600 hover:bg-purple-700 text-white py-3 px-8 rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                    >
                       <span>Request Consultation</span>
                       <svg
                         className="ml-2 h-5 w-5"
@@ -424,7 +431,7 @@ const FeaturedServices = () => {
                           d="M14 5l7 7m0 0l-7 7m7-7H3"
                         />
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

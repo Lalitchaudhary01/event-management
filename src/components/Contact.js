@@ -16,7 +16,7 @@ const Contact = ({ activeSection }) => {
   const [message, setMessage] = useState("");
 
   // WhatsApp redirect URL with phone number and preset message
-  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
 
   // Handle form submission
@@ -71,7 +71,7 @@ const Contact = ({ activeSection }) => {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-purple-100">+91 8005931391</p>
+                    <p className="text-purple-100">+91 9027195011</p>
                   </div>
                 </div>
 

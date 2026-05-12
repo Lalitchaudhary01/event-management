@@ -5,7 +5,7 @@ const Footer = () => {
   // Function to redirect to WhatsApp
   const redirectToWhatsApp = (e) => {
     e.preventDefault();
-    const phoneNumber = "918005931391"; // Format for WhatsApp API
+    const phoneNumber = "919027195011"; // Format for WhatsApp API
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! I would like to know more about Ember Events services.`;
     window.open(whatsappUrl, "_blank");
   };
@@ -158,7 +158,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/services/weddings"
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Weddings
@@ -166,7 +166,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/corporate"
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Corporate Events
@@ -174,7 +174,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/galas"
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Galas &
@@ -183,7 +183,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/parties"
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Birthday Parties
@@ -191,7 +191,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/special"
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors hover:pl-2 duration-300 flex items-center"
                 >
                   <span className="text-pink-300 mr-2">›</span> Special
@@ -256,8 +256,8 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </span>
-                <a href="tel:+918005931391" className="hover:text-pink-200">
-                  +91 8005931391
+                <a href="tel:+919027195011" className="hover:text-pink-200">
+                  +91 9027195011
                 </a>
               </p>
               <p className="flex items-center">

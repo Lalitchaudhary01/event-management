@@ -3,7 +3,7 @@ import { ChevronRight, Sparkles, GalleryHorizontal } from "lucide-react";
 
 const CallToAction = () => {
   // WhatsApp redirect URL with phone number and preset message
-  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
 
   return (

@@ -34,7 +34,7 @@ const Navbar = () => {
   // Function to redirect to WhatsApp
   const redirectToWhatsApp = (e) => {
     e.preventDefault();
-    const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+    const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
     window.open(whatsappUrl, "_blank");
   };
