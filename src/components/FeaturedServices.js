@@ -123,7 +123,7 @@ const FeaturedServices = () => {
   const [selectedService, setSelectedService] = useState(null);
   const carouselRef = useRef(null);
   const whatsappUrl =
-    "https://wa.me/919027195011?text=Hello! Can I get more information.";
+    "https://wa.me/918005931391?text=Hello! Can I get more information.";
 
   // Calculate the indices of services to display (3 at a time)
   const getVisibleIndices = () => {

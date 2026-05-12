@@ -4,7 +4,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("about");
 
   // WhatsApp contact details
-  const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
   const whatsappMessage = "Hello! Can I get more information.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     whatsappMessage
@@ -169,7 +169,7 @@ const Portfolio = () => {
             <p className="text-gray-700 leading-relaxed">
               Ember Events by Amar & Isha is a leading management company,
               specializing in crafting unforgettable memories and events with
-              over 1+ year of experience. We work closely with clients to
+              3+ years of experience. We work closely with clients to
               meticulously plan every detail, offering a customized approach for
               traditional or modern celebrations. From venue selection to vendor
               management, our comprehensive services ensure a seamless &
@@ -351,7 +351,7 @@ const Portfolio = () => {
                 <div className="space-y-4 text-gray-700">
                   <div className="flex items-center">
                     <span className="text-purple-600 mr-2">📱</span>
-                    <span>+91 9027195011</span>
+                    <span>+91 8005931391</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-purple-600 mr-2">📍</span>
