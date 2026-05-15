@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Star } from "lucide-react";
 
 const HeroSlider = () => {
+  // WhatsApp redirect URL
+  const phoneNumber = "918005931391";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
+
   // State for image slider
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
@@ -182,14 +186,16 @@ const HeroSlider = () => {
         </div>
 
         {/* Enhanced CTA section */}
-        {/* <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6 z-20 relative cursor-pointer">
           <a
-            href="/consult"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group px-8 py-4 bg-gradient-to-r from-purple-900 to-purple-600 text-white rounded-sm hover:from-purple-800 hover:to-purple-500 transition-all duration-300 transform hover:-translate-y-1 shadow-lg font-light tracking-wider flex items-center justify-center overflow-hidden relative"
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-amber-400/0 via-amber-400/20 to-amber-400/0 transform -skew-x-30 -translate-x-full group-hover:translate-x-full transition-all duration-1000 ease-out"></span>
             <Calendar className="w-4 h-4 mr-2" />
-            <span>SCHEDULE CONSULTATION</span>
+            <span>CONTACT US</span>
           </a>
 
           <a
@@ -199,7 +205,7 @@ const HeroSlider = () => {
             <Star className="w-4 h-4 mr-2" />
             <span>VIEW PORTFOLIO</span>
           </a>
-        </div> */}
+        </div>
 
         {/* Luxury indicators */}
         {/* <div className="mt-16 flex items-center justify-center gap-8 text-white/70">

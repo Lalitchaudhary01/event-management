@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Calendar,
   Star,
@@ -7,8 +7,6 @@ import {
   Trophy,
   Music,
   Building,
-  ChevronLeft,
-  ChevronRight,
   Truck,
   ShoppingBag,
   X,
@@ -118,33 +116,9 @@ const FeaturedServices = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
-  const carouselRef = useRef(null);
   const whatsappUrl =
     "https://wa.me/918005931391?text=Hello! Can I get more information.";
-
-  // Calculate the indices of services to display (3 at a time)
-  const getVisibleIndices = () => {
-    const indices = [];
-    for (let i = 0; i < 3; i++) {
-      indices.push((currentIndex + i) % services.length);
-    }
-    return indices;
-  };
-
-  // Navigate to previous set of services
-  const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? services.length - 3 : Math.max(0, prev - 3)
-    );
-  };
-
-  // Navigate to next set of services
-  const nextSlide = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 3 >= services.length ? 0 : prev + 3));
-  }, [services.length]);
 
   // Open service details modal
   const openServiceDetails = (serviceId) => {
@@ -175,16 +149,6 @@ const FeaturedServices = () => {
     };
   }, [selectedService]);
 
-  // Auto-advance the carousel every 5 seconds, pause on hover
-  useEffect(() => {
-    if (!isHovering && !selectedService) {
-      const interval = setInterval(() => {
-        nextSlide();
-      }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [currentIndex, isHovering, selectedService, nextSlide]);
-
   return (
     <div className="py-32 bg-gradient-to-b from-white via-purple-50 to-white">
       <div className="max-w-7xl mx-auto px-6 relative">
@@ -209,59 +173,46 @@ const FeaturedServices = () => {
           </p>
         </div>
 
-        <div
-          className="relative"
-          ref={carouselRef}
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          {/* Elegant carousel navigation buttons */}
-          <div className="absolute top-1/2 -left-6 transform -translate-y-1/2 z-10">
-            <button
-              onClick={prevSlide}
-              className="bg-white text-purple-700 p-4 rounded-full shadow-lg hover:shadow-xl hover:text-purple-900 border border-purple-100 group transition-all duration-300"
-              aria-label="Previous services"
-            >
-              <ChevronLeft className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
-            </button>
-          </div>
-
-          <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 z-10">
-            <button
-              onClick={nextSlide}
-              className="bg-white text-purple-700 p-4 rounded-full shadow-lg hover:shadow-xl hover:text-purple-900 border border-purple-100 group transition-all duration-300"
-              aria-label="Next services"
-            >
-              <ChevronRight className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
-            </button>
-          </div>
-
-          {/* Luxurious service cards container with smooth transitions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden">
-            {getVisibleIndices().map((serviceIndex) => {
-              const service = services[serviceIndex];
+        <div className="relative">
+          {/* Luxurious service cards container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => {
               return (
                 <div
-                  key={serviceIndex}
-                  className="bg-white p-10 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-500 border border-purple-50 group relative overflow-hidden"
+                  key={index}
+                  className="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-500 border border-purple-50 group relative overflow-hidden flex flex-col"
                 >
-                  {/* Subtle decorative accent */}
-                  <div className="absolute top-0 right-0 h-24 w-24 bg-gradient-to-bl from-purple-100 to-transparent opacity-50 -mr-12 -mt-12 rounded-full"></div>
-
-                  <div className="mb-8 p-5 bg-gradient-to-br from-purple-50 to-white inline-flex items-center justify-center rounded-full border border-purple-100 group-hover:border-purple-200 transition-colors duration-300">
-                    {service.icon}
+                  {/* Service Image */}
+                  <div className="h-56 w-full overflow-hidden relative">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-purple-900 bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-500"></div>
                   </div>
 
-                  <h3 className="text-2xl font-serif text-purple-800 mb-4 relative">
-                    {service.title}
-                    <div className="absolute -bottom-2 left-0 w-12 h-px bg-purple-300"></div>
-                  </h3>
+                  <div className="p-8 pt-0 flex-1 flex flex-col relative z-10 bg-white">
+                    {/* Subtle decorative accent */}
+                    <div className="absolute top-0 right-0 h-24 w-24 bg-gradient-to-bl from-purple-100 to-transparent opacity-50 -mr-12 -mt-12 rounded-full pointer-events-none"></div>
 
-                  <p className="text-gray-600 mb-8 font-light leading-relaxed">
-                    {service.description}
-                  </p>
+                    <div className="mb-6 bg-white p-2 inline-flex items-center justify-center rounded-full shadow-lg border border-purple-100 group-hover:border-purple-300 transition-all duration-300 w-20 h-20 self-start -mt-10 relative z-20">
+                      <div className="bg-gradient-to-br from-purple-50 to-purple-100 w-full h-full rounded-full flex items-center justify-center">
+                        {service.icon}
+                      </div>
+                    </div>
 
-                  <button
+                    <h3 className="text-2xl font-serif text-purple-800 mb-4 relative">
+                      {service.title}
+                      <div className="absolute -bottom-2 left-0 w-12 h-px bg-purple-300"></div>
+                    </h3>
+
+                    <p className="text-gray-600 mb-8 font-light leading-relaxed flex-1">
+                      {service.description}
+                    </p>
+
+                    <div className="mt-auto">
+                      <button
                     onClick={() => openServiceDetails(service.id)}
                     className="inline-flex items-center text-purple-700 hover:text-purple-900 font-medium transition-all duration-300 relative overflow-hidden group-hover:font-semibold"
                   >
@@ -286,28 +237,14 @@ const FeaturedServices = () => {
                     </span>
                     <span className="absolute bottom-0 left-0 w-full h-px bg-purple-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                   </button>
+                    </div>
+                  </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Elegant carousel indicators */}
-          <div className="flex justify-center mt-12">
-            {Array.from({ length: Math.ceil(services.length / 3) }).map(
-              (_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index * 3)}
-                  className={`mx-1.5 rounded-full border transition-all duration-300 ${
-                    Math.floor(currentIndex / 3) === index
-                      ? "w-10 h-1 bg-purple-600 border-purple-600"
-                      : "w-3 h-1 bg-purple-200 border-purple-200 hover:bg-purple-300 hover:border-purple-300"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              )
-            )}
-          </div>
+
         </div>
 
         {/* Premium experience highlight */}
