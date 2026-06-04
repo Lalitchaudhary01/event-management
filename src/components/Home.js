@@ -12,10 +12,12 @@ const Home = () => {
       <HeroSlider />
 
       {/* Tagline Section Component */}
-      <TaglineSection />
+      
 
       {/* Featured Services Component */}
       <FeaturedServices />
+
+      <TaglineSection />
 
       {/* Testimonials Component */}
       <Testimonials />
