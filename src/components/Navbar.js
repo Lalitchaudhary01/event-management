@@ -55,7 +55,7 @@ const Navbar = () => {
               <a href="/" className="flex items-center">
                 <span className="sr-only">Ember Events</span>
                 {/* Increased logo size */}
-                <div className="h-16 w-16 flex items-center justify-center relative">
+                <div className="h-12 w-12 sm:h-16 sm:w-16 flex items-center justify-center relative">
                   <img
                     src="/ember-logo.svg"
                     alt="Ember Events Logo"
@@ -63,11 +63,11 @@ const Navbar = () => {
                   />
                 </div>
                 {/* Enhanced text styling with pastel purple */}
-                <div className="ml-3 font-serif tracking-wider text-purple-500 flex flex-col">
-                  <span className="text-2xl font-bold tracking-wide">
+                <div className="ml-2 sm:ml-3 font-serif tracking-wider text-purple-500 flex flex-col">
+                  <span className="text-xl sm:text-2xl font-bold tracking-wide">
                     EMBER
                   </span>
-                  <span className="text-lg text-purple-400 -mt-1 tracking-widest">
+                  <span className="text-sm sm:text-lg text-purple-400 -mt-1 tracking-widest">
                     EVENTS
                   </span>
                 </div>

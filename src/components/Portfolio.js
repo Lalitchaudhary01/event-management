@@ -81,7 +81,7 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative flex min-h-screen items-center justify-center overflow-hidden py-28 sm:py-32">
         <div className="absolute inset-0 z-0">
           <img
             src="https://ik.imagekit.io/icrguob6c/event/welcome.jpg?updatedAt=1747243920964"
@@ -92,9 +92,9 @@ const Portfolio = () => {
         </div>
 
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-serif mb-4">Ember Events</h1>
-          <p className="text-xl md:text-2xl font-light">By Amar & Isha--</p>
-          <p className="mt-6 text-lg md:text-xl italic">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-4">Ember Events</h1>
+          <p className="text-lg sm:text-xl md:text-2xl font-light">By Amar & Isha--</p>
+          <p className="mt-6 text-base sm:text-lg md:text-xl italic">
             !! अतिथि तुम कब आओगे !!
           </p>
           <a
@@ -165,7 +165,7 @@ const Portfolio = () => {
           <h2 className="text-3xl font-serif text-purple-700 mb-6 text-center">
             About Us
           </h2>
-          <div className="bg-white p-8 rounded-2xl shadow-xl">
+          <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-xl">
             <p className="text-gray-700 leading-relaxed">
               Ember Events by Amar & Isha is a leading management company,
               specializing in crafting unforgettable memories and events with
@@ -186,7 +186,7 @@ const Portfolio = () => {
                 WHAT CAN WE DO FOR YOU
               </p>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {services.map((service, index) => (
                   <div
                     key={index}
@@ -216,11 +216,11 @@ const Portfolio = () => {
             Wedding Management
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid gap-8 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <video
                 src="https://ik.imagekit.io/yg3bo4zvy/EVENTS/WhatsApp%20Video%202025-05-14%20at%2014.52.30_392beb0b.mp4?updatedAt=1747224733105"
-                className="rounded-xl shadow-xl"
+                className="w-full rounded-xl shadow-xl"
                 controls
                 autoPlay
                 muted
@@ -337,7 +337,7 @@ const Portfolio = () => {
             Contact Us
           </h2>
 
-          <div className="bg-white p-8 rounded-2xl shadow-xl">
+          <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-xl">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/2">
                 <h3 className="text-xl font-medium text-purple-700 mb-4">
@@ -349,17 +349,17 @@ const Portfolio = () => {
                 </p>
 
                 <div className="space-y-4 text-gray-700">
-                  <div className="flex items-center">
+                  <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📱</span>
                     <span>+91 8005931391</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📍</span>
                     <span>
                       13 Anand Bhawan, Gurunanakpura, Raja Park, Jaipur
                     </span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📸</span>
                     <span>@ember_events</span>
                   </div>
@@ -370,7 +370,7 @@ const Portfolio = () => {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300"
+                    className="inline-flex w-full items-center justify-center px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300 sm:w-auto"
                   >
                     <span className="mr-2">Chat with us on WhatsApp</span>
                     <span>→</span>

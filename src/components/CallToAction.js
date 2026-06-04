@@ -7,7 +7,7 @@ const CallToAction = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
 
   return (
-    <div className="relative py-20 bg-gradient-to-br from-purple-700 via-purple-600 to-indigo-700 text-white overflow-hidden">
+    <div className="relative py-14 sm:py-20 bg-gradient-to-br from-purple-700 via-purple-600 to-indigo-700 text-white overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-32 h-32 bg-purple-500 rounded-full opacity-20 blur-xl"></div>
@@ -15,7 +15,7 @@ const CallToAction = () => {
         <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-pink-500 rounded-full opacity-10 blur-xl"></div>
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-6 z-10">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 z-10">
         <div className="flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-800 bg-opacity-50 rounded-full mb-6">
             <Sparkles size={16} className="text-purple-200" />
@@ -24,7 +24,7 @@ const CallToAction = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-center leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6 text-center leading-tight">
             Transform Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-200">
               Dreams
@@ -32,7 +32,7 @@ const CallToAction = () => {
             Into Reality
           </h2>
 
-          <p className="text-lg text-purple-100 mb-10 text-center max-w-2xl">
+          <p className="text-base sm:text-lg text-purple-100 mb-10 text-center max-w-2xl">
             Let's collaborate to craft an extraordinary event that reflects your
             unique style and vision. Our dedicated team ensures every detail is
             perfect.

@@ -101,14 +101,14 @@ const TaglineSection = () => {
   }, []);
 
   return (
-    <div className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <div className="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Three.js container - positioned absolutely to overlay content */}
       <div
         ref={mountRef}
         className="absolute inset-0 z-0 pointer-events-none"
       />
 
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Decorative elements */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-12 flex flex-col items-center w-full">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
@@ -117,16 +117,16 @@ const TaglineSection = () => {
 
         {/* Luxury quotation marks */}
         <div className="relative">
-          <span className="absolute -top-16 -left-4 text-8xl text-purple-100 font-serif opacity-60">
+          <span className="absolute -top-12 -left-2 text-6xl text-purple-100 font-serif opacity-60 sm:-top-16 sm:-left-4 sm:text-8xl">
             "
           </span>
-          <span className="absolute -bottom-40 -right-4 text-8xl text-purple-100 font-serif opacity-60">
+          <span className="absolute -bottom-28 -right-2 text-6xl text-purple-100 font-serif opacity-60 sm:-bottom-40 sm:-right-4 sm:text-8xl">
             "
           </span>
 
           {/* Main content with enhanced typography */}
           <div className="text-center relative z-10">
-            <h2 className="text-3xl md:text-5xl font-serif font-light tracking-wide text-purple-600 mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-light tracking-wide text-purple-600 mb-8">
               <span className="relative inline-block">
                 Creating Magical Moments
                 <div className="absolute -bottom-3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
@@ -134,7 +134,7 @@ const TaglineSection = () => {
               <span className="block mt-4">That Last Forever</span>
             </h2>
 
-            <p className="text-gray-600 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto tracking-wide">
+            <p className="text-gray-600 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto tracking-wide">
               At{" "}
               <span className="italic font-normal text-purple-700">
                 Ember Events

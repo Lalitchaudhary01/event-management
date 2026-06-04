@@ -13,11 +13,11 @@ const Aboutus = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-serif font-bold text-purple-600 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-serif font-bold text-purple-600 mb-6">
             About Us
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-10 rounded-full"></div>
-          <p className="text-xl text-purple-700 font-light italic max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-purple-700 font-light italic max-w-3xl mx-auto">
             Your Trusted Partner in Crafting Unforgettable Celebrations
           </p>
         </div>
@@ -25,10 +25,10 @@ const Aboutus = () => {
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg prose-purple mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12">
+        <div className="prose prose-base sm:prose-lg prose-purple mx-auto bg-white rounded-2xl shadow-xl p-5 sm:p-8 lg:p-12">
           {/* Introduction */}
           <div className="mb-12">
-            <p className="text-lg text-purple-800">
+            <p className="text-base sm:text-lg text-purple-800">
               Welcome to{" "}
               <span className="font-serif font-bold">Ember Events</span> – At
               Ember Events, we believe that every moment deserves to be
@@ -56,7 +56,7 @@ const Aboutus = () => {
 
           {/* Services Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-serif text-purple-600 font-bold mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-serif text-purple-600 font-bold mb-6 flex items-center">
               <Sparkles className="w-6 h-6 mr-2 text-pink-400" />
               Our Services
             </h2>
@@ -112,7 +112,7 @@ const Aboutus = () => {
 
           {/* Our Approach */}
           <div className="mb-12">
-            <h2 className="text-2xl font-serif text-purple-600 font-bold mb-6 flex items-center">
+            <h2 className="text-xl sm:text-2xl font-serif text-purple-600 font-bold mb-6 flex items-center">
               <Award className="w-6 h-6 mr-2 text-pink-400" />
               Our Approach
             </h2>
@@ -138,7 +138,7 @@ const Aboutus = () => {
 
           {/* Closing Message */}
           <div className="bg-gradient-to-r from-purple-100 to-pink-100 p-6 sm:p-8 rounded-xl text-center mt-10">
-            <p className="text-lg text-purple-700">
+            <p className="text-base sm:text-lg text-purple-700">
               Thank you for choosing Ember Events to be a part of your most
               treasured moments. We invite you to browse our work, connect with
               our team, and take the first step toward a celebration that truly

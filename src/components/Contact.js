@@ -36,7 +36,7 @@ const Contact = ({ activeSection }) => {
   return (
     <section
       id="contact"
-      className={`py-20 px-4 bg-gradient-to-b from-purple-50 to-white ${
+      className={`py-14 sm:py-20 px-4 bg-gradient-to-b from-purple-50 to-white ${
         activeSection === "contact" ? "block" : "hidden"
       }`}
     >
@@ -45,7 +45,7 @@ const Contact = ({ activeSection }) => {
           <div className="inline-block px-4 py-1.5 bg-purple-100 rounded-full text-purple-700 text-sm font-medium mb-3">
             Get In Touch
           </div>
-          <h2 className="text-4xl font-serif text-purple-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-serif text-purple-800 mb-4">
             Contact Us
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -57,8 +57,8 @@ const Contact = ({ activeSection }) => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
           <div className="flex flex-col md:flex-row">
             {/* Left Contact Info Panel */}
-            <div className="md:w-2/5 bg-gradient-to-br from-purple-600 to-purple-800 text-white p-8 md:p-10">
-              <h3 className="text-2xl font-medium mb-6">Let's Connect</h3>
+            <div className="md:w-2/5 bg-gradient-to-br from-purple-600 to-purple-800 text-white p-5 sm:p-8 md:p-10">
+              <h3 className="text-xl sm:text-2xl font-medium mb-6">Let's Connect</h3>
               <p className="text-purple-100 mb-8">
                 Reach out to us for a free consultation and let's discuss how we
                 can make your event extraordinary.
@@ -103,7 +103,7 @@ const Contact = ({ activeSection }) => {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-white text-purple-700 rounded-full hover:bg-purple-50 transition-all duration-300 shadow-lg transform hover:-translate-y-1 group"
+                  className="inline-flex w-full items-center justify-center px-6 py-3 bg-white text-purple-700 rounded-full hover:bg-purple-50 transition-all duration-300 shadow-lg transform hover:-translate-y-1 group sm:w-auto"
                 >
                   <MessageCircle size={20} className="mr-2" />
                   <span className="font-medium">Chat on WhatsApp</span>
@@ -115,8 +115,8 @@ const Contact = ({ activeSection }) => {
             </div>
 
             {/* Right Form Panel */}
-            <div className="md:w-3/5 p-8 md:p-10">
-              <h3 className="text-2xl font-medium text-purple-800 mb-6">
+            <div className="md:w-3/5 p-5 sm:p-8 md:p-10">
+              <h3 className="text-xl sm:text-2xl font-medium text-purple-800 mb-6">
                 Send Us a Message
               </h3>
 

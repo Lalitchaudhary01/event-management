@@ -128,24 +128,24 @@ const ServiceDetailPage = ({ serviceKey }) => {
   const Icon = service.icon;
 
   return (
-    <section className="bg-gradient-to-b from-purple-50 via-white to-purple-50 pt-32 text-gray-800">
-      <div className="relative min-h-[62vh] overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-50 via-white to-purple-50 pt-28 sm:pt-32 text-gray-800">
+      <div className="relative min-h-[58vh] overflow-hidden sm:min-h-[62vh]">
         <img
           src={service.image}
           alt={`${service.title} by Ember Events`}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-950/80 via-purple-900/55 to-black/30"></div>
-        <div className="relative mx-auto flex min-h-[62vh] max-w-7xl items-center px-6 py-20">
+        <div className="relative mx-auto flex min-h-[58vh] max-w-7xl items-center px-4 py-14 sm:min-h-[62vh] sm:px-6 sm:py-20">
           <div className="max-w-3xl text-white">
             <div className="mb-5 inline-flex items-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">
               <Icon className="mr-2 h-4 w-4" />
               {service.eyebrow}
             </div>
-            <h1 className="font-serif text-5xl font-light md:text-7xl">
+            <h1 className="font-serif text-4xl font-light sm:text-5xl md:text-7xl">
               {service.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-purple-50 md:text-xl">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-purple-50 sm:text-lg sm:leading-8 md:text-xl">
               {service.intro}
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -169,13 +169,13 @@ const ServiceDetailPage = ({ serviceKey }) => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-12 flex flex-wrap gap-3">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+        <div className="mb-10 flex gap-3 overflow-x-auto pb-2 sm:mb-12 sm:flex-wrap sm:overflow-visible sm:pb-0">
           {serviceLinks.map(([label, to]) => (
             <Link
               key={to}
               to={to}
-              className={`rounded-full border px-4 py-2 text-sm transition ${
+              className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm transition ${
                 to.endsWith(serviceKey)
                   ? "border-purple-600 bg-purple-600 text-white"
                   : "border-purple-200 bg-white text-purple-700 hover:border-purple-400"
@@ -187,11 +187,11 @@ const ServiceDetailPage = ({ serviceKey }) => {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1fr_0.85fr]">
-          <div className="rounded-2xl bg-white p-8 shadow-xl shadow-purple-100 md:p-10">
+          <div className="rounded-2xl bg-white p-5 shadow-xl shadow-purple-100 sm:p-8 md:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-purple-500">
               What We Handle
             </p>
-            <h2 className="mt-3 font-serif text-3xl text-purple-900 md:text-4xl">
+            <h2 className="mt-3 font-serif text-2xl text-purple-900 sm:text-3xl md:text-4xl">
               Complete planning with refined execution
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -207,7 +207,7 @@ const ServiceDetailPage = ({ serviceKey }) => {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-purple-900 p-8 text-white shadow-xl shadow-purple-100 md:p-10">
+          <div className="rounded-2xl bg-purple-900 p-5 text-white shadow-xl shadow-purple-100 sm:p-8 md:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pink-200">
               Our Approach
             </p>

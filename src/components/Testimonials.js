@@ -56,9 +56,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-br from-purple-100 to-pink-100">
+    <div className="py-12 sm:py-16 bg-gradient-to-br from-purple-100 to-pink-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-serif text-purple-700 mb-8 text-center">
+        <h2 className="text-3xl sm:text-4xl font-serif text-purple-700 mb-8 text-center">
           Client Experiences
         </h2>
 
@@ -67,9 +67,9 @@ const Testimonials = () => {
           {/* Video Section - Optimized for horizontal video */}
           <div className="lg:w-1/2">
             <div className="rounded-xl overflow-hidden shadow-2xl">
-              <div className="relative">
+              <div className="relative aspect-video">
                 <video
-                  className="w-full object-cover"
+                  className="h-full w-full object-cover"
                   controls
                   poster="https://ik.imagekit.io/yg3bo4zvy/EVENTS/testinomial.mp4?updatedAt=1747219350221"
                   onPlay={handleVideoPlay}
@@ -88,12 +88,12 @@ const Testimonials = () => {
 
           {/* Testimonial Card - Side by side with video on large screens */}
           <div className="lg:w-1/2 relative z-10">
-            <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col justify-between">
+            <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col justify-between">
               <div>
-                <div className="text-6xl text-purple-300 absolute top-4 left-4 font-serif">
+                <div className="text-5xl sm:text-6xl text-purple-300 absolute top-4 left-4 font-serif">
                   "
                 </div>
-                <p className="text-lg text-gray-700 mb-6 relative z-10 pt-6">
+                <p className="text-base sm:text-lg text-gray-700 mb-6 relative z-10 pt-6">
                   {testimonials[currentTestimonial].quote}
                 </p>
               </div>
@@ -133,7 +133,7 @@ const Testimonials = () => {
         </div>
 
         {/* Decorative Elements */}
-        <div className="flex justify-center mt-12">
+        <div className="hidden sm:flex justify-center mt-12">
           <div className="w-16 h-16 bg-purple-200 rounded-full opacity-50 mr-24"></div>
           <div className="w-8 h-8 bg-pink-200 rounded-full opacity-50"></div>
           <div className="w-12 h-12 bg-purple-300 rounded-full opacity-50 ml-16"></div>

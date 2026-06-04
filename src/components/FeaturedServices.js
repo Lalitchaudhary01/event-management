@@ -150,22 +150,22 @@ const FeaturedServices = () => {
   }, [selectedService]);
 
   return (
-    <div className="py-32 bg-gradient-to-b from-white via-purple-50 to-white">
-      <div className="max-w-7xl mx-auto px-6 relative">
+    <div className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-white via-purple-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
         {/* Decorative elements */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-16 w-full flex flex-col items-center">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
           <div className="mt-2 w-40 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
         </div>
 
-        <div className="text-center mb-24 relative">
-          <h2 className="text-4xl md:text-5xl font-serif font-light text-purple-800 mb-6">
+        <div className="text-center mb-14 sm:mb-20 lg:mb-24 relative">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-light text-purple-800 mb-6">
             <span className="relative inline-block">
               Signature Offerings
               <div className="absolute -bottom-4 left-0 right-0 h-px bg-gradient-to-r from-purple-200 via-purple-500 to-purple-200"></div>
             </span>
           </h2>
-          <p className="mt-8 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="mt-8 text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
             Elevate your occasions with our collection of{" "}
             <span className="italic text-purple-700">distinctive services</span>
             , meticulously designed to transform moments into extraordinary
@@ -183,7 +183,7 @@ const FeaturedServices = () => {
                   className="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-500 border border-purple-50 group relative overflow-hidden flex flex-col"
                 >
                   {/* Service Image */}
-                  <div className="h-56 w-full overflow-hidden relative">
+                  <div className="h-48 sm:h-56 w-full overflow-hidden relative">
                     <img 
                       src={service.image} 
                       alt={service.title} 
@@ -192,7 +192,7 @@ const FeaturedServices = () => {
                     <div className="absolute inset-0 bg-purple-900 bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-500"></div>
                   </div>
 
-                  <div className="p-8 pt-0 flex-1 flex flex-col relative z-10 bg-white">
+                  <div className="p-5 pt-0 sm:p-8 sm:pt-0 flex-1 flex flex-col relative z-10 bg-white">
                     {/* Subtle decorative accent */}
                     <div className="absolute top-0 right-0 h-24 w-24 bg-gradient-to-bl from-purple-100 to-transparent opacity-50 -mr-12 -mt-12 rounded-full pointer-events-none"></div>
 
@@ -202,7 +202,7 @@ const FeaturedServices = () => {
                       </div>
                     </div>
 
-                    <h3 className="text-2xl font-serif text-purple-800 mb-4 relative">
+                    <h3 className="text-xl sm:text-2xl font-serif text-purple-800 mb-4 relative">
                       {service.title}
                       <div className="absolute -bottom-2 left-0 w-12 h-px bg-purple-300"></div>
                     </h3>
@@ -248,10 +248,10 @@ const FeaturedServices = () => {
         </div>
 
         {/* Premium experience highlight */}
-        <div className="mt-24 text-center">
+        <div className="mt-16 sm:mt-24 text-center">
           <div className="inline-flex items-center justify-center">
             <div className="h-px w-12 bg-purple-300"></div>
-            <span className="mx-4 text-purple-600 text-sm tracking-widest uppercase font-light">
+            <span className="mx-3 sm:mx-4 text-purple-600 text-xs sm:text-sm tracking-widest uppercase font-light">
               Extraordinary Experiences
             </span>
             <div className="h-px w-12 bg-purple-300"></div>
@@ -297,7 +297,7 @@ const FeaturedServices = () => {
               </div>
 
               {/* Details - Now on right side on larger screens */}
-              <div className="p-8 w-full md:w-3/5">
+              <div className="p-5 sm:p-8 w-full md:w-3/5">
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-purple-100 rounded-full mr-4">
                     {selectedService.icon}

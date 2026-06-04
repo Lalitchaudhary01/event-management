@@ -140,7 +140,7 @@ const Event = () => {
     <div className="bg-black pt-8 sm:pt-16">
       {/* Main Slider with Animation */}
       <div
-        className="relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mb-6 sm:mb-12 transition-all duration-1000 ease-out"
+        className="relative max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 mb-6 sm:mb-12 transition-all duration-1000 ease-out"
         style={{
           opacity: isLoaded ? 1 : 0,
           transform: isLoaded ? "translateY(0)" : "translateY(16px)",
@@ -150,7 +150,7 @@ const Event = () => {
       >
         <div className="rounded-xl overflow-hidden">
           <div
-            className="relative h-64 sm:h-80 md:h-96 lg:h-128"
+            className="relative h-56 sm:h-80 md:h-96 lg:h-[32rem]"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -171,7 +171,7 @@ const Event = () => {
                     <img
                       src={item.url}
                       alt=""
-                      className="w-full h-full object-cover transition-transform duration-7000 ease-out hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
                     />
                   ) : (
                     <div className="relative w-full h-full">
@@ -234,7 +234,7 @@ const Event = () => {
       </div>
 
       {/* Mobile-optimized grid view for smaller screens */}
-      <div className="md:hidden px-2 mb-8">
+      <div className="md:hidden px-3 mb-8">
         <div className="grid grid-cols-2 gap-2">
           {mediaItems.slice(0, 6).map((item) => (
             <div
@@ -389,7 +389,7 @@ const Event = () => {
           ></div>
 
           <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
-            <div className="w-full h-full max-h-screen flex items-center justify-center p-4">
+          <div className="w-full h-full max-h-screen flex items-center justify-center p-3 sm:p-4">
               {activePreview.type === "image" ? (
                 <img
                   src={activePreview.url}
@@ -408,7 +408,7 @@ const Event = () => {
             </div>
 
             {/* Navigation arrows for preview */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-6">
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4 sm:space-x-6">
               <button
                 onClick={(e) => {
                   e.stopPropagation();
