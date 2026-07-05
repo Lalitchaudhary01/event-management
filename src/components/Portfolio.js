@@ -4,7 +4,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("about");
 
   // WhatsApp contact details
-  const phoneNumber = "919027195011"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
   const whatsappMessage = "Hello! Can I get more information.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     whatsappMessage
@@ -351,7 +351,7 @@ const Portfolio = () => {
                 <div className="space-y-4 text-gray-700">
                   <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📱</span>
-                    <span>+91 9027195011</span>
+                    <span>+91 8005931391</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📍</span>

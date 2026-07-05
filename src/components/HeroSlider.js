@@ -13,7 +13,7 @@ const heroImages = [
 const HeroSlider = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const whatsappUrl =
-    "https://wa.me/919027195011?text=Hello! Can I get more information.";
+    "https://wa.me/918005931391?text=Hello! Can I get more information.";
   const activeImages = [
     heroImages[currentImage],
     heroImages[(currentImage + 2) % heroImages.length],
