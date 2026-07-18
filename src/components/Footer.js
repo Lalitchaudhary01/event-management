@@ -5,7 +5,7 @@ const Footer = () => {
   // Function to redirect to WhatsApp
   const redirectToWhatsApp = (e) => {
     e.preventDefault();
-    const phoneNumber = "918005931391"; // Format for WhatsApp API
+    const phoneNumber = "918005935735"; // Format for WhatsApp API
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! I would like to know more about Ember Events services.`;
     window.open(whatsappUrl, "_blank");
   };
@@ -232,11 +232,11 @@ const Footer = () => {
                   </svg>
                 </span>
                 <span>
-                  13 Anand Bhawan
+                  31/207 , sector 3, pratap nagar,
                   <br />
-                  Gurunanakpura, Raja Park
+                  jaipur, Rajasthan,
                   <br />
-                  Jaipur
+                  india (302033)
                 </span>
               </p>
               <p className="flex items-center">
@@ -256,8 +256,8 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </span>
-                <a href="tel:+918005931391" className="hover:text-pink-200">
-                  +91 8005931391
+                <a href="tel:+918005935735" className="hover:text-pink-200">
+                  +91 8005935735
                 </a>
               </p>
               <p className="flex items-center">

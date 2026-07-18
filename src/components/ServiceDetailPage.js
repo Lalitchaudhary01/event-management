@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 const whatsappUrl =
-  "https://wa.me/918005931391?text=Hello! Can I get more information.";
+  "https://wa.me/918005935735?text=Hello! Can I get more information.";
 
 const services = {
   weddings: {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const address = "13 Anand Bhawan, Gurunanakpura, Raja Park, Jaipur";
+const address = "31/207 , sector 3, pratap nagar, jaipur, Rajasthan, india (302033)";
 const effectiveDate = "May 9, 2026";
 
 const policySections = [

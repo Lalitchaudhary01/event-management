@@ -118,7 +118,7 @@ const FeaturedServices = () => {
 
   const [selectedService, setSelectedService] = useState(null);
   const whatsappUrl =
-    "https://wa.me/918005931391?text=Hello! Can I get more information.";
+    "https://wa.me/918005935735?text=Hello! Can I get more information.";
 
   // Open service details modal
   const openServiceDetails = (serviceId) => {

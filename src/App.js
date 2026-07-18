@@ -14,7 +14,7 @@ import LegalPage from "./components/LegalPage";
 import ServiceDetailPage from "./components/ServiceDetailPage";
 
 function App() {
-  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "918005935735"; // Format for WhatsApp API (no + sign)
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello! Can I get more information.`;
 
   return (

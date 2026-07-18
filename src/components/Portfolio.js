@@ -4,7 +4,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("about");
 
   // WhatsApp contact details
-  const phoneNumber = "918005931391"; // Format for WhatsApp API (no + sign)
+  const phoneNumber = "918005935735"; // Format for WhatsApp API (no + sign)
   const whatsappMessage = "Hello! Can I get more information.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     whatsappMessage
@@ -351,12 +351,12 @@ const Portfolio = () => {
                 <div className="space-y-4 text-gray-700">
                   <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📱</span>
-                    <span>+91 8005931391</span>
+                    <span>+91 8005935735</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-purple-600 mr-2">📍</span>
                     <span>
-                      13 Anand Bhawan, Gurunanakpura, Raja Park, Jaipur
+                      31/207 , sector 3, pratap nagar, jaipur, Rajasthan, india (302033)
                     </span>
                   </div>
                   <div className="flex items-start">
